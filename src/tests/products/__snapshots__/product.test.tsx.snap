@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductItem rendering Should render correctly 1`] = `
+<WithStyles(ForwardRef(Card))
+  className="makeStyles-root-1"
+>
+  <WithStyles(ForwardRef(CardActionArea))>
+    <WithStyles(ForwardRef(CardMedia))
+      alt="Contemplative Reptile"
+      className="makeStyles-media-2"
+      component="img"
+      height="140"
+      image="https://www.tissotwatches.com/media/shop/catalog/product/cache/all/image/920x/17f82f742ffe127f42dca9de82fb58b1/T/0/T099.429.11.038.00_1.png"
+      title="Contemplative Reptile"
+    />
+    <WithStyles(ForwardRef(CardContent))>
+      <WithStyles(ForwardRef(Typography))
+        component="h6"
+        gutterBottom={true}
+        variant="h6"
+      >
+        TISSOT CHEMIN DES TOURELLES POWERMATIC 80 GMT
+      </WithStyles(ForwardRef(Typography))>
+      <WithStyles(ForwardRef(Typography))
+        color="textSecondary"
+        component="p"
+        variant="body2"
+      >
+        La Tissot Gentleman est une montre polyvalente, à la fois ergonomique et élégante en toutes circonstances. Elle se porte aussi bien en environnement professionnel, qui privilégie des codes classiques, que le week-end, où elle se plie avec aisance aux activités de loisirs. A sa place dans la vie d'un homme moderne et actif, la Tissot Gentleman se fait le compagnon idéal de tous les jours, de toutes les occasions, de tous les styles.
+      </WithStyles(ForwardRef(Typography))>
+      <WithStyles(ForwardRef(Typography))
+        className="makeStyles-price-3"
+        component="span"
+        variant="h4"
+      >
+        960
+        €
+      </WithStyles(ForwardRef(Typography))>
+    </WithStyles(ForwardRef(CardContent))>
+  </WithStyles(ForwardRef(CardActionArea))>
+  <WithStyles(ForwardRef(CardActions))>
+    <WithStyles(ForwardRef(Button))
+      color="primary"
+      fullWidth={true}
+      size="large"
+      variant="contained"
+    >
+      Ajouter au panier
+    </WithStyles(ForwardRef(Button))>
+  </WithStyles(ForwardRef(CardActions))>
+</WithStyles(ForwardRef(Card))>
+`;
