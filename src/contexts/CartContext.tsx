@@ -1,6 +1,6 @@
 import React, { useMemo, useState, useCallback } from 'react';
 
-interface ICartContext {
+export interface ICartContext {
     products: IProduct[],
     total: number,
     addToCart: (product: IProduct) => void
