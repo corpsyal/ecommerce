@@ -1,4 +1,4 @@
-import { products, fetchProducts, fetchProductById, findProductById } from "../../services/products";
+import { products, fetchProducts, fetchProductById, findProductById, calcTotalPrice } from "../../services/products";
 
 describe('Products service', () => {
 
@@ -35,5 +35,10 @@ describe('Products service', () => {
         const productId: string = 'undefined id';
         const fetchedProduct = await fetchProductById(productId);
         expect(fetchedProduct).toBe(undefined);
+    });
+
+    it('Should calc total price correctly', async () => {
+        const totalPrice = calcTotalPrice(products);
+        expect(totalPrice).toBe(2280);
     });
 });

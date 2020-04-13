@@ -29,6 +29,7 @@ export const products: IProduct[] = [
 ];
 
 export const findProductById = (products: IProduct[] = []) => (id: string): IProduct | undefined => products.find(product => product.id === id)
+export const calcTotalPrice = (products: IProduct[] = []) => products.reduce((totalPrice: number, product: IProduct) => product.price + totalPrice , 0)
 
 const delayDuration: number = 3000; // in milliseconds
  
