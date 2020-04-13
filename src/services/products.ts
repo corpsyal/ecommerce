@@ -33,12 +33,12 @@ export const calcTotalPrice = (products: IProduct[] = []) => products.reduce((to
 
 const delayDuration: number = 3000; // in milliseconds
  
-export type FetchProducts = () => Promise<IProduct[]>;
-export const fetchProducts: FetchProducts = () => new Promise(async resolve => {
+type FetchAllProducts = () => Promise<IProduct[]>;
+export const fetchAllProducts: FetchAllProducts = () => new Promise(async resolve => {
     setTimeout(() => resolve(products), delayDuration); // to simulate an api call
 });
 
-export type FetchProductById = (id: string) => Promise<IProduct>;
+type FetchProductById = (id: string) => Promise<IProduct>;
 export const fetchProductById: FetchProductById = id => new Promise(async resolve => {
     setTimeout(() => {
         const product = findProductById(products)(id);

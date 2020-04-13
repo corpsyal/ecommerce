@@ -1,4 +1,4 @@
-import { products, fetchProducts, fetchProductById, findProductById, calcTotalPrice } from "../../services/products";
+import { products, fetchAllProducts, fetchProductById, findProductById, calcTotalPrice } from "../../services/products";
 
 describe('Products service', () => {
 
@@ -21,7 +21,7 @@ describe('Products service', () => {
     });
 
     it('Return all products', async () => {
-        const fetchedProducts = await fetchProducts();
+        const fetchedProducts = await fetchAllProducts();
         expect(fetchedProducts).toBe(products);
     });
 

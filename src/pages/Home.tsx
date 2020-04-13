@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import useProducts from '../hooks/useProducts';
 import { LinearProgress, Grid } from '@material-ui/core';
 import ProductItem from '../components/products/ProductItem';
 
 const Home = () => {
-    const { products, isLoading } = useProducts();
+    const { products, isLoading, fetchProducts } = useProducts();
+
+
+    useEffect(() => {
+        fetchProducts();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []); // empty dependencies to use as componentDidMount
 
     return isLoading ? <LinearProgress /> : (
         <Grid container>
