@@ -1,7 +1,7 @@
 import React from 'react';
 import useProducts from '../hooks/useProducts';
 import { LinearProgress, Grid } from '@material-ui/core';
-import ProductItem from '../components/products/product-item';
+import ProductItem from '../components/products/ProductItem';
 
 const Home = () => {
     const { products, isLoading } = useProducts();

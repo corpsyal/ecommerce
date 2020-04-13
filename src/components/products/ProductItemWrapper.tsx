@@ -4,10 +4,8 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core';
-import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
   root: {
@@ -28,11 +26,12 @@ const useStyles = makeStyles({
   }
 });
 
-interface IProductItemProps {
-  product: IProduct
+interface IProductItemWrapperProps {
+  product: IProduct,
+  children: React.ReactNode
 }
 
-const ProductItem = ({ product }: IProductItemProps) => {
+const ProductItemWrapper = ({ product, children }: IProductItemWrapperProps) => {
   const classes = useStyles();
 
   return (
@@ -59,16 +58,10 @@ const ProductItem = ({ product }: IProductItemProps) => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        {/* Button tag in a Link tag is not valid html, it's just for sample, in real usecase we must take the time to style the link component */}
-        <Link to={`/${product.id}`} className={classes.link}>
-          <Button size="large" variant="contained" color="primary" fullWidth>
-            Voir
-          </Button>
-        </Link>
-
+          {children}
       </CardActions>
     </Card>
   );
 }
 
-export default ProductItem;
+export default ProductItemWrapper;
