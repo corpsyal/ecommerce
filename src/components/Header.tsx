@@ -1,5 +1,6 @@
 import React from 'react';
-import { AppBar, Toolbar, Button, makeStyles } from '@material-ui/core';
+import { AppBar, Toolbar, makeStyles } from '@material-ui/core';
+import Cart from './Cart';
 
 const useStyles = makeStyles({
     toolbar: {
@@ -13,7 +14,7 @@ const Header = () => {
     return (
         <AppBar position="static">
             <Toolbar className={classes.toolbar}>
-                <Button color="inherit">Card</Button>
+                <Cart />
             </Toolbar>
         </AppBar>
     );
