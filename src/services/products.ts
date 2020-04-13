@@ -28,6 +28,8 @@ export const products: IProduct[] = [
     }
 ];
 
+export const findProductById = (products: IProduct[] = []) => (id: string): IProduct | undefined => products.find(product => product.id === id)
+
 const delayDuration: number = 3000; // in milliseconds
  
 export type FetchProducts = () => Promise<IProduct[]>;
@@ -38,7 +40,8 @@ export const fetchProducts: FetchProducts = () => new Promise(async resolve => {
 export type FetchProductById = (id: string) => Promise<IProduct>;
 export const fetchProductById: FetchProductById = id => new Promise(async resolve => {
     setTimeout(() => {
-        const product = products.find(product => product.id === id);
+        const product = findProductById(products)(id);
         resolve(product);
     }, delayDuration);
 });
+
