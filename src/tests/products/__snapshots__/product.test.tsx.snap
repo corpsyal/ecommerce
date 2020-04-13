@@ -19,7 +19,7 @@ exports[`ProductItem rendering Should render correctly 1`] = `
         gutterBottom={true}
         variant="h6"
       >
-        TISSOT CHEMIN DES TOURELLES POWERMATIC 80 GMT
+        TISSOT CHEMIN DES TOURELLES POWERMATIC 80
       </WithStyles(ForwardRef(Typography))>
       <WithStyles(ForwardRef(Typography))
         color="textSecondary"
@@ -39,14 +39,19 @@ exports[`ProductItem rendering Should render correctly 1`] = `
     </WithStyles(ForwardRef(CardContent))>
   </WithStyles(ForwardRef(CardActionArea))>
   <WithStyles(ForwardRef(CardActions))>
-    <WithStyles(ForwardRef(Button))
-      color="primary"
-      fullWidth={true}
-      size="large"
-      variant="contained"
+    <Link
+      className="makeStyles-link-4"
+      to="/9myf5qjyvr"
     >
-      Ajouter au panier
-    </WithStyles(ForwardRef(Button))>
+      <WithStyles(ForwardRef(Button))
+        color="primary"
+        fullWidth={true}
+        size="large"
+        variant="contained"
+      >
+        Voir
+      </WithStyles(ForwardRef(Button))>
+    </Link>
   </WithStyles(ForwardRef(CardActions))>
 </WithStyles(ForwardRef(Card))>
 `;
