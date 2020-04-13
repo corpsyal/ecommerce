@@ -1,12 +1,12 @@
 import React from 'react';
 import useProducts from '../hooks/useProducts';
 
-const Home = () => {
+const ProductPage = () => {
     const products = useProducts();
 
     return (
-        <div>HomePage !</div>
+        <div>ProductPage !</div>
     );
 }
 
-export default Home;
+export default ProductPage;
