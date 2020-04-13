@@ -1,7 +1,7 @@
 export const products: IProduct[] = [
     {
         id: '9myf5qjyvr',
-        name: 'TISSOT CHEMIN DES TOURELLES POWERMATIC 80 GMT',
+        name: 'TISSOT CHEMIN DES TOURELLES POWERMATIC 80',
         price: 960,
         pictures: [
             "https://www.tissotwatches.com/media/shop/catalog/product/cache/all/image/920x/17f82f742ffe127f42dca9de82fb58b1/T/0/T099.429.11.038.00_1.png"
